@@ -1,16 +1,15 @@
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'example42-iptables', '2.1.15'
+mod 'puppetlabs-firewall', '2.8.1'
 mod 'garethr-docker', '5.3.0'
-mod 'puppetlabs-apache', '12.1.0'
-mod 'puppetlabs-concat', '9.0.2'
-mod 'puppetlabs-ntp', '10.1.0'
-mod 'puppetlabs-vcsrepo', '6.1.0'
+mod 'puppetlabs-apache', '5.10.0'
+mod 'puppetlabs-concat', '6.4.0'
+mod 'puppetlabs-ntp', '8.5.0'
+mod 'puppetlabs-vcsrepo', '3.2.1'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/Sakura286/puppet-jenkins',
   :ref => 'master'
-mod 'stankevich/python', '1.19.0'
-mod 'newrelic-nrsysmond',
-  :git => "https://github.com/newrelic/puppet-nrsysmond.git"
+mod 'puppet-python', '5.0.0'
+mod 'claranet-newrelic', '2.4.2'
 
-mod 'saz-timezone', '6.3.0'
+mod 'saz-timezone', '6.1.0'
