@@ -1,7 +1,11 @@
 forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs-firewall', '2.8.1'
+
+#specify powershell version to avoid dependency conflict
 mod 'puppetlabs-docker', '3.14.0'
+mod 'puppetlabs-powershell', '2.3.0'
+
 mod 'puppetlabs-apache', '5.10.0'
 mod 'puppetlabs-concat', '6.4.0'
 mod 'puppetlabs-ntp', '8.5.0'
