@@ -5,6 +5,7 @@ mod 'puppetlabs-firewall', '2.8.1'
 #specify powershell version to avoid dependency conflict
 mod 'puppetlabs-docker', '3.14.0'
 mod 'puppetlabs-powershell', '2.3.0'
+mod 'puppetlabs-stdlib', '4.25.1'
 
 mod 'puppetlabs-apache', '5.10.0'
 mod 'puppetlabs-concat', '6.4.0'
