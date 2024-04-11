@@ -11,20 +11,8 @@ mod 'puppetlabs-apache', '5.10.0'
 mod 'puppetlabs-concat', '6.4.0'
 mod 'puppetlabs-ntp', '8.5.0'
 mod 'puppetlabs-vcsrepo', '3.2.1'
-mod 'voxpupuli-jenkins', 
-  :git => 'https://github.com/Sakura286/puppet-jenkins',
-  :ref => 'v2.0.0'
+mod 'puppet-jenkins', '2.0.0' 
 mod 'puppet-python', '5.0.0'
 mod 'claranet-newrelic', '2.4.2'
 
 mod 'saz-timezone', '6.1.0'
-
-# avoid error
-# Puppet (err): Evaluation Error: Resource type not found: Deferred
-# (file: /root/buildfarm_deployment/modules/systemd/manifests/unit_file.pp, line: 71, column: 47) on node
-#
-# 3.1.0 or higher is required(maybe by the above pkgs)
-# but since 3.2.0 Deffer is introduced and only puppet higher than 6 support it.
-mod 'puppet-systemd',
-  :git => 'https://github.com/voxpupuli/puppet-systemd',
-  :ref => 'v3.1.0'
