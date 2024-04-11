@@ -22,6 +22,9 @@ mod 'saz-timezone', '6.1.0'
 # avoid error
 # Puppet (err): Evaluation Error: Resource type not found: Deferred
 # (file: /root/buildfarm_deployment/modules/systemd/manifests/unit_file.pp, line: 71, column: 47) on node
+#
+# 3.1.0 or higher is required(maybe by the above pkgs)
+# but since 3.2.0 Deffer is introduced and only puppet higher than 6 support it.
 mod 'puppet-systemd',
   :git => 'https://github.com/voxpupuli/puppet-systemd',
-  :ref => '2.12.0'
+  :ref => '3.1.0'
