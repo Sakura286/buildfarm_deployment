@@ -22,4 +22,4 @@ mod 'saz-timezone', '6.1.0'
 # avoid error
 # Puppet (err): Evaluation Error: Resource type not found: Deferred
 # (file: /root/buildfarm_deployment/modules/systemd/manifests/unit_file.pp, line: 71, column: 47) on node
-mod 'puppetlabs-systemd' '3.1.0'
+mod 'puppetlabs-systemd' '3.2.0'
