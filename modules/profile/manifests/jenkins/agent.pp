@@ -142,9 +142,8 @@ class profile::jenkins::agent (
     require => User[$agent_username],
   }
 
-  exec { 'systemctl-daemon-reload':
+  exec { 'systemctl-daemon-reload-jenkins':
     command => '/bin/systemctl daemon-reload',
-    refreshonly => true,
     require => File['/etc/init.d/jenkins-slave'],
     before  => Service['jenkins-slave'],
   }
