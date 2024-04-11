@@ -13,7 +13,7 @@ mod 'puppetlabs-ntp', '8.5.0'
 mod 'puppetlabs-vcsrepo', '3.2.1'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/Sakura286/puppet-jenkins',
-  :ref => 'master'
+  :ref => 'v2.0.0'
 mod 'puppet-python', '5.0.0'
 mod 'claranet-newrelic', '2.4.2'
 
