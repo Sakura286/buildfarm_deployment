@@ -22,4 +22,6 @@ mod 'saz-timezone', '6.1.0'
 # avoid error
 # Puppet (err): Evaluation Error: Resource type not found: Deferred
 # (file: /root/buildfarm_deployment/modules/systemd/manifests/unit_file.pp, line: 71, column: 47) on node
-mod 'puppet-systemd' '3.1.0'
+mod 'voxpupuli-puppet-systemd'
+  :git => 'https://github.com/voxpupuli/puppet-systemd'
+  :ref => 'v3.1.0'
