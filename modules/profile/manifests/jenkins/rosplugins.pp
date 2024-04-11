@@ -372,10 +372,10 @@ class profile::jenkins::rosplugins {
     require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['ssh-credentials'] ]
   }
 
-  ::jenkins::plugin { 'structs':
-    version => '1.20',
-    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
-  }
+  #::jenkins::plugin { 'structs':
+  #  version => '1.20',
+  #  require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
+  #}
 
   ::jenkins::plugin { 'subversion':
     version => '2.12.1',
