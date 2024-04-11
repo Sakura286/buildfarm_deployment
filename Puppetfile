@@ -27,4 +27,4 @@ mod 'saz-timezone', '6.1.0'
 # but since 3.2.0 Deffer is introduced and only puppet higher than 6 support it.
 mod 'puppet-systemd',
   :git => 'https://github.com/voxpupuli/puppet-systemd',
-  :ref => '3.1.0'
+  :ref => 'v3.1.0'
