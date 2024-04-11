@@ -47,10 +47,10 @@ class profile::jenkins::rosplugins {
     require => [ Jenkins::Plugin['ant'], Jenkins::Plugin['antisamy-markup-formatter'], Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['external-monitor-job'], Jenkins::Plugin['javadoc'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['junit'], Jenkins::Plugin['ldap'], Jenkins::Plugin['mailer'], Jenkins::Plugin['matrix-auth'], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['pam-auth'], Jenkins::Plugin['windows-slaves'] ]
   }
 
-#  ::jenkins::plugin { 'bouncycastle-api':
-#    version => '2.17',
-#    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
-#  }
+  ::jenkins::plugin { 'bouncycastle-api':
+    version => '2.17',
+    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
+  }
 
   ::jenkins::plugin { 'branch-api':
     version => '2.0.20',
@@ -372,10 +372,10 @@ class profile::jenkins::rosplugins {
     require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['ssh-credentials'] ]
   }
 
-#  ::jenkins::plugin { 'structs':
-#    version => '1.20',
-#    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
-#  }
+  ::jenkins::plugin { 'structs':
+    version => '1.20',
+    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
+  }
 
   ::jenkins::plugin { 'subversion':
     version => '2.12.1',
